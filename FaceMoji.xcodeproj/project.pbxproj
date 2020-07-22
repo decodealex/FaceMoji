@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		524883AE24C8CBE1002A4A12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524883AD24C8CBE1002A4A12 /* AppDelegate.swift */; };
 		524883B024C8CBE1002A4A12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524883AF24C8CBE1002A4A12 /* SceneDelegate.swift */; };
-		524883B224C8CBE1002A4A12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524883B124C8CBE1002A4A12 /* ViewController.swift */; };
-		524883B524C8CBE1002A4A12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524883B324C8CBE1002A4A12 /* Main.storyboard */; };
+		524883B224C8CBE1002A4A12 /* FaceMojiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524883B124C8CBE1002A4A12 /* FaceMojiViewController.swift */; };
 		524883B724C8CBE4002A4A12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 524883B624C8CBE4002A4A12 /* Assets.xcassets */; };
 		524883BA24C8CBE4002A4A12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524883B824C8CBE4002A4A12 /* LaunchScreen.storyboard */; };
+		52DB064824C8D17C00F06ED8 /* EmojiNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DB064724C8D17C00F06ED8 /* EmojiNode.swift */; };
+		52DB064A24C8D1B600F06ED8 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DB064924C8D1B600F06ED8 /* String+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		524883AA24C8CBE1002A4A12 /* FaceMoji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceMoji.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		524883AD24C8CBE1002A4A12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		524883AF24C8CBE1002A4A12 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		524883B124C8CBE1002A4A12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		524883B424C8CBE1002A4A12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		524883B124C8CBE1002A4A12 /* FaceMojiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceMojiViewController.swift; sourceTree = "<group>"; };
 		524883B624C8CBE4002A4A12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		524883B924C8CBE4002A4A12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		524883BB24C8CBE4002A4A12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52DB064724C8D17C00F06ED8 /* EmojiNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiNode.swift; sourceTree = "<group>"; };
+		52DB064924C8D1B600F06ED8 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,40 @@
 		524883AC24C8CBE1002A4A12 /* FaceMoji */ = {
 			isa = PBXGroup;
 			children = (
+				52DB064C24C8D1CB00F06ED8 /* Controllers */,
+				52DB064D24C8D1D800F06ED8 /* Nodes */,
+				52DB064B24C8D1C200F06ED8 /* Helpers */,
 				524883AD24C8CBE1002A4A12 /* AppDelegate.swift */,
 				524883AF24C8CBE1002A4A12 /* SceneDelegate.swift */,
-				524883B124C8CBE1002A4A12 /* ViewController.swift */,
-				524883B324C8CBE1002A4A12 /* Main.storyboard */,
 				524883B624C8CBE4002A4A12 /* Assets.xcassets */,
 				524883B824C8CBE4002A4A12 /* LaunchScreen.storyboard */,
 				524883BB24C8CBE4002A4A12 /* Info.plist */,
 			);
 			path = FaceMoji;
+			sourceTree = "<group>";
+		};
+		52DB064B24C8D1C200F06ED8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				52DB064924C8D1B600F06ED8 /* String+Ext.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		52DB064C24C8D1CB00F06ED8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				524883B124C8CBE1002A4A12 /* FaceMojiViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		52DB064D24C8D1D800F06ED8 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				52DB064724C8D17C00F06ED8 /* EmojiNode.swift */,
+			);
+			path = Nodes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +154,6 @@
 			files = (
 				524883BA24C8CBE4002A4A12 /* LaunchScreen.storyboard in Resources */,
 				524883B724C8CBE4002A4A12 /* Assets.xcassets in Resources */,
-				524883B524C8CBE1002A4A12 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +164,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				524883B224C8CBE1002A4A12 /* ViewController.swift in Sources */,
+				52DB064824C8D17C00F06ED8 /* EmojiNode.swift in Sources */,
+				524883B224C8CBE1002A4A12 /* FaceMojiViewController.swift in Sources */,
 				524883AE24C8CBE1002A4A12 /* AppDelegate.swift in Sources */,
+				52DB064A24C8D1B600F06ED8 /* String+Ext.swift in Sources */,
 				524883B024C8CBE1002A4A12 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +175,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		524883B324C8CBE1002A4A12 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				524883B424C8CBE1002A4A12 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		524883B824C8CBE4002A4A12 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +236,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +290,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

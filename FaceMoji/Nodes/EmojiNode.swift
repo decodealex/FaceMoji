@@ -10,8 +10,12 @@ import SceneKit
 
 class EmojiNode: SCNNode {
     
+    // MARK: - Properties
+    
     var options: [String]
     var index = 0
+    
+    // MARK: - Lifecycle
     
     init(with options: [String], width: CGFloat = 0.06, height: CGFloat = 0.06) {
         self.options = options
